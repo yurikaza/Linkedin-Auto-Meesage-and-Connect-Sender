@@ -63,6 +63,7 @@ six==1.16.0
 soupsieve==2.2.1
 toml==0.10.2
 traitlets==5.1.0
+twint==2.1.21
 typing-extensions==3.10.0.2
 urllib3==1.26.7
 virtualenv==20.8.1
