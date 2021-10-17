@@ -16,7 +16,8 @@ def rende_home_page():
             nick = request.form['email']
             passwords = request.form['password']
             messages = request.form['message']
-            driver = webdriver.Chrome('C:/Users/yusuf/chromedriver.exe')
+            driver = webdriver.Chrome('chromeDrive/chromedriver.exe')
+
             driver.get('https://www.linkedin.com')
             time.sleep(2)
 
