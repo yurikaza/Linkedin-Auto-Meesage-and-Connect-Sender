@@ -51,7 +51,14 @@ def rende_home_page():
 
             time.sleep(2)
 
-            username.send_keys(verification_code)
+            verification.send_keys(verification_code)
+
+            time.sleep(2)
+
+            submit_vf_code = driver.find_element_by_xpath(
+                """/html/body/div/main/form/div[2]/button""").click()
+
+            time.sleep(4)
 
 # ***************** ADD CONTACTS ***********************
 
