@@ -46,6 +46,7 @@ def rende_home_page():
 
             time.sleep(20)
 
+        elif request.method == "POST":
             verification = driver.find_element_by_xpath(
                 "//input[@class='form__input--text input_verification_pin']")
 
