@@ -1,7 +1,5 @@
 from flask import Flask, redirect, url_for, render_template, request
 from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
-
 
 import requests
 import json
@@ -19,7 +17,8 @@ def rende_home_page():
             passwords = request.form['password']
             messages = request.form['message']
 
-            driver = webdriver.Chrome(ChromeDriverManager().install())
+            driver = webdriver.Chrome(
+                executable_path='C:/Users/yusuf/AppData/Local/Programs/Python/Python37/chromedriver.exe')
 
             driver.get('https://www.linkedin.com')
             time.sleep(2)
