@@ -15,6 +15,8 @@ chardet==4.0.0
 charset-normalizer==2.0.7
 click==8.0.3
 colorama==0.4.4
+configparser==5.0.2
+crayons==0.4.0
 cssselect==1.1.0
 dataclasses==0.6
 decorator==5.1.0
@@ -67,6 +69,7 @@ typing-extensions==3.10.0.2
 urllib3==1.26.7
 virtualenv==20.8.1
 wcwidth==0.2.5
+webdriver-manager==3.5.1
 Werkzeug==2.0.2
 yarl==1.7.0
 zipp==3.6.0
