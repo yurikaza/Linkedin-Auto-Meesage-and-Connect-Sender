@@ -16,7 +16,6 @@ def rende_home_page():
             nick = request.form['email']
             passwords = request.form['password']
             messages = request.form['message']
-            verification_code = request.form['verification_code']
 
             chrome_options = webdriver.ChromeOptions()
             chrome_options.binary_location = os.environ.get(
