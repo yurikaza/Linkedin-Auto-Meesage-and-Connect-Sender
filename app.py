@@ -44,21 +44,6 @@ def rende_home_page():
             submit = driver.find_element_by_xpath(
                 "//button[@type='submit']").click()
 
-            time.sleep(20)
-
-        elif request.method == "GET":
-            verification = driver.find_element_by_xpath(
-                "//input[@class='form__input--text input_verification_pin']")
-
-            time.sleep(2)
-
-            verification.send_keys(verification_code)
-
-            time.sleep(2)
-
-            submit_vf_code = driver.find_element_by_xpath(
-                """/html/body/div/main/form/div[2]/button""").click()
-
             time.sleep(4)
 
 # ***************** ADD CONTACTS ***********************
