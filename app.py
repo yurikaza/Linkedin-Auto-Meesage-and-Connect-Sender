@@ -4,7 +4,7 @@ from selenium import webdriver
 import requests
 import json
 import time
-
+import os
 
 app = Flask(__name__)
 
@@ -17,8 +17,14 @@ def rende_home_page():
             passwords = request.form['password']
             messages = request.form['message']
 
-            driver = webdriver.Chrome(
-                executable_path='C:/Users/yusuf/AppData/Local/Programs/Python/Python37/chromedriver.exe')
+            chrome_options = webdriver.ChromeOptions()
+            chrome_options.binary_location = os.environ.get(
+                "GOOGLE_CHROME_BIN")
+            chrome_options.add_argument("--headless")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--no-sandbox")
+            driver = webdriver.Chrome(executable_path=os.environ.get(
+                "CHROMEDRIVER_PATH"), chrome_options=chrome_options)
 
             driver.get('https://www.linkedin.com')
             time.sleep(2)
