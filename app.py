@@ -16,7 +16,7 @@ def rende_home_page():
             nick = request.form['email']
             passwords = request.form['password']
             messages = request.form['message']
-
+            vertification_code = request.form['vertification_code']
             chrome_options = webdriver.ChromeOptions()
             chrome_options.binary_location = os.environ.get(
                 "GOOGLE_CHROME_BIN")
@@ -43,7 +43,13 @@ def rende_home_page():
             submit = driver.find_element_by_xpath(
                 "//button[@type='submit']").click()
 
-            time.sleep(4)
+            time.sleep(20)
+
+            vertification_code = driver.find_element_by_xpath(
+                '//*[@id="input__email_verification_pin"]')
+
+            vertification_code = driver.find_element_by_xpath(
+                '//*[@id="email-pin-submit-button"]').click()
 
 # ***************** ADD CONTACTS ***********************
 

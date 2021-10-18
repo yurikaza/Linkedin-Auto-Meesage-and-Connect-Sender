@@ -23,15 +23,19 @@
             <form action="/" method="post">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <p><input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></p>
+                  <p><input type="email" name="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></p>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <p><input type="password" name="password" class="form-control" id="exampleInputPassword1"></p>
+                  <p><input type="password" required name="password" class="form-control" id="exampleInputPassword1"></p>
                 </div>
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
-                  <p><textarea name="message" id="message" class="form-control" cols="20" rows="10"></textarea></p>
+                  <p><textarea name="message" required id="message" class="form-control" cols="20" rows="10"></textarea></p>
+                </div>
+                <div class="mb-3">
+                  <label for="vertification_code" class="form-label">Vertification Code</label>
+                  <p><input type="text" name="vertification_code" class="form-control" id="vertification_code"></p>
                 </div>
                 <button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
               </form>
