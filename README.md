@@ -10,9 +10,12 @@
 $ pip install -r /path/to/requirements.txt
 ```
 
-# 3. Run flask
-
+# 3. Give name a flask app
 ``` 
 $ export FLASK_APP=hello
+```
+
+# 4. Run flask
+``` 
 $ flask run
 ```
