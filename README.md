@@ -6,6 +6,10 @@
 ```
 https://www.python.org/downloads/
 ```
+## Install Web Driver
+```
+https://chromedriver.chromium.org/downloads
+```
 
 ### 2. install requirement.txt files
 
